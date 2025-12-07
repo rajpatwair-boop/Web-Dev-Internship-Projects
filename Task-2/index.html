@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prodigy Internship - Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- AOS Scroll Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- FLOATING SCROLL MENU -->
+    <button id="scrollTopBtn" onclick="scrollToTop()">↑</button>
+
+    <!-- NAVBAR -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">CodeCraft <span>Labs</span></div>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <button class="toggle-btn" onclick="toggleTheme()">🌙</button>
+                </li>
+            </ul>
+
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-content" data-aos="fade-right">
+            <h1>Create. Innovate. Elevate.</h1>
+            <p>Web Development Internship Task-2 | Prodigy InfoTech</p>
+            <p>Building modern, responsive and elegant web applications with real-world experience.</p>
+
+            <div class="buttons">
+                <a href="#projects"><button class="btn primary">View Projects</button></a>
+                <a href="#contact"><button class="btn secondary">Contact Me</button></a>
+            </div>
+        </div>
+
+        <img src="https://images.pexels.com/photos/4974912/pexels-photo-4974912.jpeg"
+            class="hero-img" alt="Developer working" data-aos="fade-left">
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="features" id="services" data-aos="fade-up">
+        <h2>What I Offer</h2>
+        <div class="cards">
+            <div class="card">⚡ Responsive & Fast UI</div>
+            <div class="card">🎨 Creative Frontend Design</div>
+            <div class="card">🚀 Real Project Experience</div>
+        </div>
+    </section>
+
+    <!-- PROJECT SHOWCASE -->
+    <section class="projects" id="projects" data-aos="fade-up">
+        <h2>Project Showcase</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <h3>Landing Page</h3>
+                <p>A modern and responsive website built using HTML & CSS with animations.</p>
+                <a href="#" class="view-btn">View</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Game Project</h3>
+                <p>2D platformer pixel-art game built using Unity and C# scripting.</p>
+                <a href="#" class="view-btn">View</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Portfolio Website</h3>
+                <p>Personal portfolio website showcasing skills, projects & contact info.</p>
+                <a href="#" class="view-btn">View</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact" data-aos="fade-up">
+        <h2>Contact Me</h2>
+        <p>Let’s build something amazing together.</p>
+
+        <div class="socials">
+            <a href="https://github.com/rajpatwair-boop" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+            <a href="mailto:rajpatwa@gmail.com">Email</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Designed & Developed by <b>CodeCraft Labs</b> | Web Developer & Game Developer</p>
+    </footer>
+
+    <!-- AOS Animation Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        function toggleMenu(){
+            document.getElementById("navLinks").classList.toggle("active");
+        }
+
+        // DARK MODE
+        function toggleTheme(){
+            document.body.classList.toggle("dark");
+        }
+
+        // BACK TO TOP BUTTON
+        window.onscroll = function(){
+            const btn = document.getElementById("scrollTopBtn");
+            btn.style.display = window.scrollY > 300 ? "block" : "none";
+        };
+
+        function scrollToTop(){
+            window.scrollTo({top: 0, behavior: "smooth"});
+        }
+    </script>
+
+</body>
+</html>
