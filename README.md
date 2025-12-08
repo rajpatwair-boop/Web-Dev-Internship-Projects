@@ -33,6 +33,8 @@ The goal of Task-2 was to build a modern and responsive **Landing Page** with go
 
 ## 📸 **Screenshots**
 <img width="1918" height="1086" alt="image" src="https://github.com/user-attachments/assets/2ec45e81-05b7-41c3-b4cf-34470f093940" />
+<img width="1910" height="1105" alt="image" src="https://github.com/user-attachments/assets/d1480f16-d385-4e24-a059-9f07c8c681c0" />
+
 
 
 ---
