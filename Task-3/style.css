@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background: #e9eeff;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.container{
+    margin-top: 80px;
+}
+
+h1{
+    font-size: 42px;
+    color: #4831d4;
+}
+
+.subtitle{
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.converter-card{
+    margin: 50px auto;
+    width: 380px;
+    padding: 25px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+input, select{
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 2px solid #dedede;
+    border-radius: 12px;
+    font-size: 16px;
+}
+
+button{
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    background: #6c63ff;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+button:hover{
+    background: #4e46d2;
+}
+
+#result{
+    margin-top: 15px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* Floating Dark Mode Button */
+.theme-toggle{
+    position: fixed;
+    top: 20px;
+    right: 25px;
+    padding: 10px 14px;
+    font-size: 22px;
+    border: none;
+    border-radius: 50%;
+    background: #3831af;
+    color: white;
+    cursor: pointer;
+}
+
+/* Scroll Top Button */
+#scrollTopBtn{
+    position: fixed;
+    bottom: 30px;
+    right: 25px;
+    padding: 12px 18px;
+    background: #4831d4;
+    font-size: 22px;
+    color: white;
+    border:none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+}
+
+/* Dark Mode */
+body.dark{
+    background: #0b0c10;
+    color: white;
+}
+body.dark .converter-card{
+    background: #1a1c28;
+    color: white;
+    box-shadow: 0 6px 18px rgba(255,255,255,0.08);
+}
+body.dark input, body.dark select{
+    background: #2a2d3c;
+    color: white;
+}
+
+/* Responsive */
+@media(max-width:450px){
+    .converter-card{
+        width: 90%;
+    }
+}
+footer{
+    margin-top: 40px;
+    padding: 18px;
+    background: #0a0f49;
+    color: white;
+}

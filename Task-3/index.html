@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter | CodeCraft Labs</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<button id="scrollTopBtn" onclick="scrollToTop()">↑</button>
+<button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+
+<div class="container">
+    <h1 data-aos="fade-down">Temperature Converter</h1>
+    <p class="subtitle">Convert temperature between Celsius, Fahrenheit & Kelvin 🔥❄</p>
+
+    <div class="converter-card" data-aos="fade-up">
+        <input type="number" id="inputTemp" placeholder="Enter temperature">
+
+        <select id="inputUnit">
+            <option value="celsius">Celsius (°C)</option>
+            <option value="fahrenheit">Fahrenheit (°F)</option>
+            <option value="kelvin">Kelvin (K)</option>
+        </select>
+
+        <button onclick="convertTemperature()">Convert</button>
+
+        <h2 id="result">Result: --</h2>
+    </div>
+</div>
+
+<footer>
+    <p>© 2025 Designed & Developed by <b>CodeCraft Labs</b> | Prodigy InfoTech Internship Task-3</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
