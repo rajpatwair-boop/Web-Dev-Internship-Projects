@@ -44,4 +44,6 @@ The goal of Task-2 was to build a modern and responsive **Landing Page** with go
   Basic HTML Page.
 2.Task-2
   Landing Page Using HTML and CSS.
+3.Task-3
+  Temperature Converter using HTML CSS and JS.
   
