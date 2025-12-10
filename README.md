@@ -4,7 +4,7 @@ All Tasks for Prodigy Infotech Internship
 
 ### **Responsive Landing Page with Dark Mode, Project Showcase & Scroll Navigation**
 This project is created as part of the **Web Development Internship at Prodigy InfoTech**.  
-The goal of Task-2 was to build a modern and responsive **Landing Page** with good UI design practice, animations, and mobile-friendly layout.
+.
 
 ---
 
