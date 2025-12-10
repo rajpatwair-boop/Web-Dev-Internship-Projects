@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta nameviewport="width=device-width, initial-scale=1.0">
+    <title>Stopwatch | CodeCraft Labs</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/992/992651.png">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+
+<header class="hero">
+    <h1 class="brand">CodeCraft Labs</h1>
+    <p class="tagline">Smart • Clean • Modern Web Tools</p>
+</header>
+
+<div class="container card">
+
+    <h2 class="title">Ultra Professional Stopwatch</h2>
+    <p class="subtitle">Precision timing with modern UI ✨</p>
+
+    <div class="timer-container">
+        <div class="timer-display" id="timer">00:00:00.00</div>
+    </div>
+
+    <div class="btn-group">
+        <button onclick="startTimer()" id="startBtn" class="btn primary"><span>▶</span> Start</button>
+        <button onclick="pauseTimer()" id="pauseBtn" class="btn warning"><span>⏸</span> Pause</button>
+        <button onclick="resetTimer()" id="resetBtn" class="btn danger"><span>🔁</span> Reset</button>
+        <button onclick="addLap()" id="lapBtn" class="btn success"><span>🏁</span> Lap</button>
+        <button onclick="clearLaps()" id="clearLapBtn" class="btn clear"><span>🗑️</span> Clear Laps</button>
+    </div>
+
+    <h3 class="lap-heading">Lap Times</h3>
+    <ul id="laps" class="laps"></ul>
+</div>
+
+<footer>
+    <p>© 2025 CodeCraft Labs | Prodigy InfoTech Internship Task-4</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

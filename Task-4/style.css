@@ -1,0 +1,219 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* BACKGROUND */
+body{
+    background: linear-gradient(135deg, #c7d3ff, #e4ebff);
+    text-align: center;
+    transition: 0.4s;
+}
+
+body.dark{
+    background: linear-gradient(135deg, #0b0c10, #1b1e24);
+    color: #ddd;
+}
+
+/* HERO */
+.hero{
+    padding: 50px 0 20px;
+    animation: fadeInDown 0.8s ease;
+}
+
+.brand{
+    font-size: 44px;
+    font-weight: 700;
+    color: #4834d4;
+}
+
+body.dark .brand{
+    color: #bdb9ff;
+}
+
+.tagline{
+    font-size: 18px;
+    margin-top: 5px;
+    color: #444;
+}
+
+body.dark .tagline{
+    color: #ccc;
+}
+
+/* CARD */
+.card{
+    margin: 40px auto;
+    width: 85%;
+    max-width: 650px;
+    padding: 32px;
+    border-radius: 22px;
+    background: rgba(255,255,255,0.25);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    animation: fadeIn 1s ease;
+}
+
+body.dark .card{
+    background: rgba(25,25,45,0.45);
+}
+
+/* TITLES */
+.title{
+    font-size: 34px;
+    font-weight: 700;
+    color: #4834d4;
+}
+
+body.dark .title{
+    color: #bdb9ff;
+}
+
+.subtitle{
+    margin-top: 5px;
+    margin-bottom: 25px;
+    color: #555;
+}
+
+body.dark .subtitle{
+    color: #ccc;
+}
+
+/* TIMER DISPLAY */
+.timer-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.timer-display{
+    font-size: 54px;
+    padding: 25px 50px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.4);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+    transition: 0.3s ease;
+    letter-spacing: 2px;
+}
+
+.timer-display:hover{
+    transform: scale(1.03);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.28);
+}
+
+body.dark .timer-display{
+    background: rgba(30, 30, 60, 0.55);
+    color: #fff;
+}
+
+/* BUTTONS */
+.btn-group{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.btn{
+    padding: 12px 22px;
+    border: none;
+    font-size: 17px;
+    border-radius: 14px;
+    cursor: pointer;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    transition: 0.25s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* BUTTON COLORS */
+.primary{ background: #6c63ff; color: white; }
+.primary:hover{ transform: scale(1.07); background: #554df5; }
+
+.warning{ background: #ffa947; color: white; }
+.warning:hover{ transform: scale(1.07); background: #ff8c1c; }
+
+.danger{ background: #e63946; color: white; }
+.danger:hover{ transform: scale(1.07); background: #c92027; }
+
+.success{ background: #00b894; color: white; }
+.success:hover{ transform: scale(1.07); background: #009a7d; }
+
+.clear{ background: #636e72; color: white; }
+.clear:hover{ transform: scale(1.07); background: #444b4d; }
+
+/* DARK MODE BUTTONS */
+body.dark .primary{ background: #7d75ff; }
+body.dark .warning{ background: #ffb763; }
+body.dark .danger{ background: #f7575f; }
+body.dark .success{ background: #01d1a6; }
+body.dark .clear{ background: #707a7d; }
+
+/* LAP LIST */
+.lap-heading{
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.laps{
+    list-style: none;
+    width: 90%;
+    margin: auto;
+    padding: 0;
+    max-height: 260px;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+.laps li{
+    background: rgba(255,255,255,0.6);
+    padding: 12px;
+    margin: 8px 0;
+    border-left: 6px solid #6c63ff;
+    border-radius: 12px;
+    animation: slideUp 0.3s ease;
+    transition: 0.3s;
+}
+
+.laps li.flash{
+    background: #dcd7ff;
+}
+
+body.dark .laps li{
+    background: rgba(30,30,60,0.6);
+}
+
+/* THEME TOGGLE */
+.theme-toggle{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 22px;
+    background: #4834d4;
+    color: white;
+    padding: 10px 14px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer{
+    margin-top: 40px;
+    background: #1b1e56;
+    padding: 18px;
+    color: #fff;
+    font-size: 14px;
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn{ from{opacity:0;} to{opacity:1;} }
+@keyframes fadeInDown{ from{opacity:0; transform:translateY(-20px);} to{opacity:1;} }
+@keyframes slideUp{ from{transform:translateY(12px); opacity:0;} to{transform:translateY(0); opacity:1;} }
