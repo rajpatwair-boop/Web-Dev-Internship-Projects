@@ -1,6 +1,6 @@
 # Web-Dev-Internship-Projects
 All Tasks for Prodigy Infotech Internship
-# Prodigy InfoTech - Web Development Internship (Task 2)
+# Prodigy InfoTech - Web Development Internship.
 
 ### **Responsive Landing Page with Dark Mode, Project Showcase & Scroll Navigation**
 This project is created as part of the **Web Development Internship at Prodigy InfoTech**.  
