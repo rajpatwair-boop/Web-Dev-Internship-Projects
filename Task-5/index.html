@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CodeCraft Labs — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/992/992651.png" />
+</head>
+<body>
+
+  <!-- Scroll to top -->
+  <button id="scrollTop" class="scroll-top" aria-label="Scroll to top">↑</button>
+
+  <!-- Theme toggle -->
+  <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+
+  <!-- NAV -->
+  <nav id="nav" class="nav">
+    <div class="nav-brand">CodeCraft Labs</div>
+    <ul class="nav-links">
+      <li><a href="#hero" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+
+      <!-- FIXED RESUME DOWNLOAD -->
+      <li>
+        <a class="btn-resume" href="Raj Patwa.pdf" download>
+          Download Resume
+        </a>
+      </li>
+    </ul>
+
+    <button id="navToggle" class="nav-toggle">☰</button>
+  </nav>
+
+  <!-- HERO -->
+  <header id="hero" class="hero section">
+    <div class="hero-inner">
+      <h1 class="hero-title">CodeCraft Labs</h1>
+      <p class="hero-sub">Web & Game Developer</p>
+      <p class="hero-desc">Crafting clean, professional and interactive digital experiences with modern UI and polished code.</p>
+
+      <div class="hero-ctas">
+        <a href="#projects" class="cta cta-primary">View Projects</a>
+        <a href="#contact" class="cta cta-ghost">Contact Me</a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="visual-card">
+        <svg class="vc-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor" d="M3 3h18v2H3z"/>
+        </svg>
+        <h4>Interactive UI</h4>
+        <p>Modern & responsive designs</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about" class="about section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <p class="lead">
+        I’m a passionate Web & Game Developer creating responsive websites and clean UI designs.
+        Currently working as an intern at Prodigy InfoTech.
+      </p>
+
+      <div class="about-grid">
+        <div class="about-card">
+          <h3>What I do</h3>
+          <p>Frontend development (HTML, CSS, JS), responsive design, and beginner-level game development in Unity.</p>
+        </div>
+
+        <div class="about-card">
+          <h3>Tools I Use</h3>
+          <p>VS Code • GitHub • Chrome DevTools • Figma (basic)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="skills section">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+
+      <div class="skills-grid">
+        <div class="skill">
+          <div class="skill-name">HTML</div>
+          <div class="skill-bar"><div style="width:92%"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-name">CSS</div>
+          <div class="skill-bar"><div style="width:88%"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-name">JavaScript</div>
+          <div class="skill-bar"><div style="width:82%"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-name">Git & GitHub</div>
+          <div class="skill-bar"><div style="width:80%"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-name">Unity (Game Dev)</div>
+          <div class="skill-bar"><div style="width:60%"></div></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="projects section">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+
+      <div class="projects-grid">
+
+        <!-- CARD 1 -->
+        <article class="project-card">
+          <div class="project-media gradient-1">
+            <div class="project-icon">🌐</div>
+          </div>
+
+          <div class="project-body">
+            <h3>Landing Page </h3>
+            <p>A responsive landing page with animations and dark mode.</p>
+            <div class="project-links">
+              <a href="https://github.com/rajpatwair-boop/Web-Dev-Internship-Projects/tree/main/" target="_blank">GitHub</a>
+              <a href="#" class="demo">Live</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 2 -->
+        <article class="project-card">
+          <div class="project-media gradient-2">
+            <div class="project-icon">🌡️</div>
+          </div>
+
+          <div class="project-body">
+            <h3>Temperature Converter </h3>
+            <p>Professional converter with validation, UI polish and animations.</p>
+
+            <div class="project-links">
+              <a href="https://github.com/rajpatwair-boop" target="_blank">GitHub</a>
+              <a href="#" class="demo">Live</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 3 -->
+        <article class="project-card">
+          <div class="project-media gradient-3">
+            <div class="project-icon">⏱️</div>
+          </div>
+
+          <div class="project-body">
+            <h3>Stopwatch App V2 </h3>
+            <p>An advanced stopwatch with lap system & modern UI.</p>
+
+            <div class="project-links">
+              <a href="https://github.com/rajpatwair-boop" target="_blank">GitHub</a>
+              <a href="#" class="demo">Live</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <p class="lead">Want to work together? Let's connect.</p>
+
+      <div class="contact-grid">
+        <a class="contact-card" href="mailto:rajpatwa.ir@gmail.com">📧 Email</a>
+        <a class="contact-card" href="https://github.com/rajpatwair-boop" target="_blank">💻 GitHub</a>
+        <a class="contact-card" href="https://www.linkedin.com" target="_blank">🔗 LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>© 2025 CodeCraft Labs</div>
+      <div class="socials">
+        <a href="https://github.com/rajpatwair-boop" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+        <a href="mailto:rajpatwa.ir@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
